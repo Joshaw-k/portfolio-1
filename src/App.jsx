@@ -4,10 +4,9 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import NavbarDropdown from "./components/NavbarDropdown";
+import Hero from "./components/Hero";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [showNavbar, setNavbar] = useState(true);
   const [showNavDropdown, setNavDropdown] = useState(false);
 
   const handleDropdown = () => {
@@ -17,10 +16,13 @@ function App() {
     <div className="relative">
       {showNavDropdown && <NavbarDropdown handleDropdown={handleDropdown} />}
       <div
-        className={`${showNavDropdown && "bg-black opacity-50 h-[100vh]"}`}
+        className={`${showNavDropdown && "bg-[rgba(0,0,0,.5)] h-[100vh]"}`}
         onClick={() => handleDropdown()}
       >
-        {showNavbar && <Navbar handleDropdown={handleDropdown} />}
+        <Navbar handleDropdown={handleDropdown} />
+        <main>
+          <Hero />
+        </main>
       </div>
     </div>
   );
