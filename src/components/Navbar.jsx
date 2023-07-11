@@ -8,7 +8,7 @@ const Navbar = () => {
         <h1>KoniesJay</h1>
       </div>
       <div>
-        <AiOutlineMenu className="text-xl" />
+        <AiOutlineMenu className="text-2xl" />
       </div>
     </div>
   );
