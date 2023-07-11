@@ -11,14 +11,18 @@ function App() {
   const [showNavDropdown, setNavDropdown] = useState(false);
 
   const handleDropdown = () => {
-    setNavbar(!showNavbar);
     setNavDropdown(!showNavDropdown);
   };
   return (
-    <>
-      {showNavbar && <Navbar handleDropdown={handleDropdown} />}
+    <div className="relative">
       {showNavDropdown && <NavbarDropdown handleDropdown={handleDropdown} />}
-    </>
+      <div
+        className={`${showNavDropdown && "bg-black opacity-50 h-[100vh]"}`}
+        onClick={() => handleDropdown()}
+      >
+        {showNavbar && <Navbar handleDropdown={handleDropdown} />}
+      </div>
+    </div>
   );
 }
 
