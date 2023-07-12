@@ -5,6 +5,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import NavbarDropdown from "./components/NavbarDropdown";
 import Hero from "./components/Hero";
+import Projects from "./components/Projects";
 
 function App() {
   const [showNavDropdown, setNavDropdown] = useState(false);
@@ -16,12 +17,15 @@ function App() {
     <div className="relative">
       {showNavDropdown && <NavbarDropdown handleDropdown={handleDropdown} />}
       <div
-        className={`${showNavDropdown && "bg-[rgba(0,0,0,.5)] h-[100vh]"}`}
+        className={`${
+          showNavDropdown && "bg-[rgba(0,0,0,0.6)] opacity-25 h-[100vh]"
+        }`}
         onClick={() => handleDropdown()}
       >
         <Navbar handleDropdown={handleDropdown} />
         <main>
           <Hero />
+          <Projects />
         </main>
       </div>
     </div>

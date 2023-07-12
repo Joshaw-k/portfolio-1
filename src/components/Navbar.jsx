@@ -4,7 +4,7 @@ import { BiLogoGmail } from "react-icons/bi";
 
 const Navbar = ({ handleDropdown }) => {
   return (
-    <div className="py-5 px-3">
+    <div className="py-5 px-3 max-w-[100rem] m-auto">
       <div className="hidden md:flex items-center justify-between">
         <h1 className="text-4xl lg:text-5xl  bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text font-bold">
           KoniesJay
