@@ -8,7 +8,7 @@ const Projects = () => {
       <h1 className="text-2xl md:text-4xl font-bold text-center bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">
         My Projects
       </h1>
-      <div className="mt-8 grid grid-cols-1 gap-y-5">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 items-start md:gap-x-3 lg:grid-cols-3 lg:gap-x-5 max-w-6xl m-auto gap-y-5">
         {projects.map((items, index) => {
           return (
             <div
@@ -27,7 +27,7 @@ const Projects = () => {
                 <div className="grid grid-cols-2">
                   {items.stack.map((item, index) => {
                     return (
-                      <div key={index} className="flex items-center">
+                      <div key={index} className="flex items-center gap-x-2">
                         <div className="w-[20%]">
                           <img
                             src={item.img}
@@ -35,7 +35,7 @@ const Projects = () => {
                             className="w-full"
                           />
                         </div>
-                        <h3 className="w-[80%] text-pink-500 font-medium">
+                        <h3 className="w-[80%] text-pink-500 font-medium text-sm">
                           {item.title}
                         </h3>
                       </div>

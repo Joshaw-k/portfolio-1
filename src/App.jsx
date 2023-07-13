@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import NavbarDropdown from "./components/NavbarDropdown";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   const [showNavDropdown, setNavDropdown] = useState(false);
@@ -20,12 +21,12 @@ function App() {
         className={`${
           showNavDropdown && "bg-[rgba(0,0,0,0.6)] opacity-25 h-[100vh]"
         }`}
-        onClick={() => handleDropdown()}
       >
         <Navbar handleDropdown={handleDropdown} />
         <main>
           <Hero />
           <Projects />
+          <Contact />
         </main>
       </div>
     </div>

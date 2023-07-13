@@ -71,3 +71,13 @@ export const projects = [
     ],
   },
 ];
+export const stack = [
+  { title: "HTML", img: "" },
+  { title: "CSS", img: "" },
+  { title: "JS", img: "" },
+  { title: "Git", img: "" },
+  { title: "GitHub", img: "" },
+  { title: "React", img: "" },
+  { title: "TailwindCSS", img: "" },
+  { title: "BootstrapCSS", img: "" },
+];
