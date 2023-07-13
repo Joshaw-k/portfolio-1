@@ -15,8 +15,8 @@ const Projects = () => {
               key={index}
               className="bg-gradient-to-r from-purple-500 to-pink-500 p-1 rounded-xl"
             >
-              <div className="w-full rounded-tl-xl rounded-tr-xl overflow-hidden h-64">
-                <img src={items.img == "" && image} alt="proj-img" />
+              <div className="w-full rounded-tl-xl rounded-tr-xl overflow-hidden h-52">
+                <img src={items.img} alt="proj-img" className="h-[100%]" />
               </div>
               <div className="bg-white p-3 flex flex-col gap-y-2 rounded-bl-xl rounded-br-xl">
                 <h2 className="text-lg md:text-xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">

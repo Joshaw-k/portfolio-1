@@ -7,6 +7,7 @@ import NavbarDropdown from "./components/NavbarDropdown";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Stack from "./components/Stack";
 
 function App() {
   const [showNavDropdown, setNavDropdown] = useState(false);
@@ -26,6 +27,7 @@ function App() {
         <main>
           <Hero />
           <Projects />
+          <Stack />
           <Contact />
         </main>
       </div>
